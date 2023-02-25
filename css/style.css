@@ -1,0 +1,251 @@
+body { background-color: #f2f2f2; }
+
+a:active,
+a:visited,
+a:hover,
+a:link {
+  color: #000;
+  text-decoration: none;
+  outline: none;
+}
+
+.main-container {
+  position: relative;
+  max-width: 1200px;
+  min-width: 768px;
+  padding: 0;
+  margin: 0 auto;
+  font: 700 14px/21px 'PT Sans', Arial;
+  text-transform: uppercase;
+  background-color: #fff;
+  box-shadow: 0 0 15px 0px rgba(0,0,0,0.2);
+}
+
+/*-----------------------  ГЛАВНОЕ МЕНЮ -----------------------*/
+
+.main-header-logo { 
+	position: relative;
+	margin: 0 44%;
+}
+
+.main-header-logo a {
+    position: absolute;
+    width: 100%;
+    top: 0;    
+    z-index: 2;
+}
+
+.main-header-logo a img { max-width: 100%; }
+
+.site-navigation {
+    padding: 0;
+    font-size: 0;
+}
+
+.site-navigation li {
+    display: inline-block;
+    vertical-align: top;
+    padding-top: 14px;
+    padding-bottom: 16px;
+    width: 20%;
+}
+
+.site-navigation li a:active,
+.site-navigation li a:hover,
+.site-navigation li a:visited,
+.site-navigation li a:link {
+    display: block;
+    text-align: center;
+    font-size: 14px;
+    line-height: 26px;
+}
+
+.site-navigation li a:hover { color: #a8c9df; }
+
+.site-navigation li a:active { color: rgba(129,179,210,1); }
+
+.site-navigation .active a { color: rgba(129,179,210,0.3); }
+
+.site-navigation .active a:hover { color: rgba(96,78,67,1); }
+
+.site-navigation .active a:active { color: rgba(96,78,67,0.3); }
+
+/*-----------------------  ФУТЕР  -----------------------*/
+
+.main-footer {
+  width: 100%;
+  padding: 35px 0 15px 0;
+  color: #000;
+  font-size: 0px;
+  text-align: center;
+}
+
+.footer-column {
+  font-size: 0;
+  width: 33.333333%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.hashtag {
+  margin-top: 0.5em;
+  font-size: 21px;
+  line-height: 26px;
+}
+
+/*не могу разобраться как сделать кнопоччки и лого. В макете psd не выгружаются картинки*/
+
+.footer-social li {
+  position: relative;
+  display: inline-block;
+  margin: 0 5px;
+  font-size: 12px;
+  width: 46px;
+  height: 48px;
+  background-color: #5496bd;
+}
+
+.footer-developer  { margin-top: 8px; }
+
+.footer-developer span {
+  display: inline-block;
+  vertical-align: middle;
+  font-size: 14px;
+  line-height: 26px;
+}
+
+.footer-developer a {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 10px;
+
+  background: url('../img/logo-name.svg') no-repeat top left; 
+}
+
+/* ПЕРВЫЙ ЭКРАН */
+
+.first-screen {
+  position: relative;
+  width: 100%;
+  min-height: 506px;
+  background: #fff url('../img/bg-first.jpg') no-repeat 50% -60px ;
+  border-top: 1px solid transparent;
+}
+
+.welcome {
+  margin: 75px auto 0 auto;
+  overflow: hidden;
+  width: 458px;
+ }
+
+.first-screen::after {
+  display: table;
+  content: "";
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  min-height: 62px;
+  background: url('../img/first-screen-mask.png') no-repeat 50% 0;
+  background-size: 100% 100%;
+}
+
+/* ПРИМУЩЕСТВА */
+
+.float-left { float: left; }
+
+.float-right { float: right; }
+
+.features-header {
+  width: 510px;
+  padding-top: 20px;
+  margin: 0 auto;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+.features-header h1,
+.features-header h2,
+.features h3 {
+  line-height: 26px;
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+.features { text-align: center; }
+
+.features header h1 { font-size: 21px; }
+
+.features header h2 {
+  font-size: 14px;
+  font-weight: normal;
+}
+
+.features p { font-weight: normal; }
+
+.row-1-text {
+  width: 23.333333333333%;
+  padding: 0 5%;
+  background-color: #81b3d2;
+  color: #fff;
+  overflow: hidden;
+}
+
+.row-1-text h3 {
+  width: 150px;
+  font-size: 21px;
+  line-height: 26px;
+  margin: 0 auto;
+  margin-top: 2.45em;
+  margin-bottom: 0.5em;
+}
+
+.row-1-text p {
+  margin-top: 0.5em;
+  margin-bottom: 1.5em;
+}
+
+.feature-row-1 .row-1-text { height: 256px; }
+
+.row-1-image {
+  width: 66.666666666666%;
+  height: 256px;
+  overflow: hidden;
+}
+
+.row-1-image img {
+  position: relative;
+  width: 100%;
+  top: -28%;
+}
+
+.row-2-text {
+  box-sizing: border-box;
+  width: 33.333333333333%;
+  min-height: 330px;
+  padding: 0 4%;
+}
+
+.row-2-text img { width: 100%; }
+
+.row-2-text h3 {
+  font-size: 21px;
+  line-height: 26px;
+  margin-top: 0.2em;
+  margin-bottom: 1em;
+}
+
+.row-2-icon {
+  display: inline-block;
+  min-height: 100px;
+  margin-top: 42px;
+  margin-bottom: 6px;
+}
+
+.feature-row-3 .row-1-text {
+  color: #000;
+  background-color: #eee;
+  min-height: 256px;
+}
+
+.feature-row-3 .row-1-text h3 { margin-top: 2.1em; }
+

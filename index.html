@@ -1,12 +1,166 @@
 <!DOCTYPE html>
 <html lang="ru">
   <head>
-    <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="utf-8">
   </head>
-  <body>
+  <body class="main-container">
+  	<header class="main-header">
+      <div class="main-header-logo">
+        <a href="index.html">
+          <img src="img/logo.svg" alt="Логотип сайта города Седона">
+        </a>
+      </div>        
+      <nav class="main-navigation">
+        <ul class="site-navigation">
+          <li class="active"><a href="index.html">Информация</a></li>
+          <li><a href="#">Фото и видео</a></li>
+          <li></li>
+          <li><a href="#">Карта штата</a></li>
+          <li><a href="hotels.html">Гостиницы</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+    <section class="first-screen">        
+        <div class="welcome">
+          <img src="img/welcome.svg" alt="Welcome to the gorgeous"/>
+        </div>
+<!--         <div class="first-screen-text sedona">
+          <img src="img/sedona.png" alt="Sedona"/>
+        </div>
+        <div class="first-screen-text quote-phrase">
+          <img src="img/quote-phrase.png" alt="Because the Grand Canyon sucks!"/>
+        </div>    -->     
+    </section>
+<!-- description и features в одну секцию нужно объединить?  -->
+    <section class="features">
+      	<header class="features-header">
+	      	<h1>Седона - небольшой городок в Аризоне, заслуживающий большего!</h1>
+	      	<h2>Рассмотрим 5 причин, по которым Седона круче чем гранд каньон!</h2>
+      	</header>
+       	<div class="feature-row-1">
+          	<div class="row-1-text float-left">
+            	<h3>Настоящий городок</h3>
+            	<p>— №1 —</p>
+            	<p>Cедона не атракцион для туристов, там течет своя жизнь</p>
+          	</div>
+          	<div class="row-1-image float-right">
+            	<img src="img/feature1.jpg" alt="Настоящий городок" />
+          	</div>
+        </div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+        <div class="feature-row-2">
+            <div class="row-2-text float-left">
+            	<div class="row-2-icon">
+                	<img src="img/house-icn.svg" alt="Жильё">
+            	</div>
+            	<h3>Жилье</h3>
+            	<p>Рекомендуем пожить в настоящем мотеле, все как в кино! </p>
+          	</div>
+            <div class="row-2-text float-left">
+            	<div class="row-2-icon">
+              		<img src="img/burger-icn.svg" alt="Бургер">
+            	</div>
+            	<h3>Еда</h3>
+            	<p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+            </div>
+            <div class="row-2-text float-left">
+            	<div class="row-2-icon">
+              		<img src="img/gift-icn.svg" alt="Сувениры">
+            	</div>
+            	<h3>Сувениры</h3>
+            	<p>Не только китайского, но и местного производства!</p>
+            </div>
+        </div>
 
+        <div class="feature-row-1">
+            <div class="row-1-image float-left">
+            	<img src="img/feature2.jpg" alt="Мост дьявола" />
+            </div>
+            <div class="row-1-text float-right">
+                <h3>Там есть мост дьявола</h3>
+                <p>— №2 —</p>
+                <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            </div>
+        </div>
+
+        <div class="feature-row-3">
+            <div class="row-1-text float-left">
+                <h3>Небольшая площадь</h3>
+                <p>— №3 —</p>
+                <p>Все достопримечательности находятся очень близко</p>
+            </div>
+            <div class="row-1-text float-left">
+                <h3>Красивая дорога</h3>
+                <p>— №4 —</p>
+                <p>Ехать в седону из Лас-Вегаса совсем не скучно!</p>
+            </div>
+            <div class="row-1-text float-left">
+                <h3>Мало туристов</h3>
+                <p>— №5 —</p>
+                <p>Большинство едет в Гранд Каньон и толпится там</p>
+            </div>
+        </div>
+      </section>
+      <section class="hotels">
+      	<h2 class="visually-hidden">Поиск отелей</h2>
+      	<b>Заинтересовались?</b>
+        <p class="text-1">
+        	Укажите предполагаемые даты поездки,<br>
+        	и мы покажем вам лучшие предложения гостиниц в седоне
+        </p>
+        <section class="hotels-search">
+          <p class="hotels-search-title">поиск гостиницы в седоне</p>
+          <form method="post" action="/echo">
+	          <p>
+	          	<label for="hotels-search-date">Дата заезда:</label>
+	          	<input id="hotels-search-date" type="date" name="hotels-search-date" placeholder="24 апреля 2017">
+	          </p>
+	          <p>
+	          	<label for="hotels-search-date">Дата выезда:</label>
+	          	<input id="hotels-search-date" type="date" name="hotels-search-date" placeholder="4 июля 2017">
+	          </p>
+	          <p>
+	          	<p>
+	              <label for="adult-quantity">взрослые:</label>
+	          	  <div class="hotels-search-quantity">
+	          	    <button type="button">-</button>
+	          	    <input id="adult-quantity" type="number" name="adult-quantity" placeholder="2">
+	          	    <button type="button">+</button>
+	          	  </div>
+	          	</p>
+	          	<p>
+	              <label for="child-quantity">дети:</label>
+	          	  <div class="hotels-search-quantity">
+	          	    <button type="button">-</button>
+	          	    <input id="child-quantity" type="number" name="child-quantity" placeholder="0">>
+	          	    <button type="button">+</button>
+	          	  </div>
+	          	</p>
+	          </p>
+	          <input class="hotels-search-find" type="submit" value="Найти">
+          </form> 
+        </section>      	
+      </section>
+    </main>
+    <footer class="main-footer">
+      <p class="hashtag footer-column">#VISITSEDONA</p>
+      <div class="footer-social footer-column">
+        <ul>
+          <li><a class="social-button twitter" href="#">Twitter	</a></li>
+          <li><a class="social-button fb" href="#">Facebook</a></li>
+          <li><a class="social-button youtube" href="#">Youtube</a></li>
+        </ul>
+      </div>
+      <p class="footer-developer footer-column">
+        <span>website by:</span> 
+        <a href="#">
+          <img src="img/logo-name.svg" alt="Логотип разработчика сайта HTML Academy">         
+        </a>
+      </p>
+    </footer>      
   </body>
 </html>
+
