@@ -80,7 +80,7 @@ body {
   margin-left: auto;
   width: 268px;
   align-items: center;
-  padding-left: px;
+  padding-left: 0;
 }
 
 .page-header {
@@ -653,7 +653,7 @@ body {
 }
 
 .range-toggle:focus {
-  outline: 3px solid ##83b3d3;
+  outline: 3px solid #83b3d3;
 }
 
 .range-toggle:active {
